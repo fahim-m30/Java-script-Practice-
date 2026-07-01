@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link href="./src/output.css" rel="stylesheet">
+    <title>practice</title>
+</head>
+<body class="min-h-screen bg-amber-200 flex items-center justify-center">
+    <div class="flex flex-row gap-4">
+    <script>
+    function myFunction() 
+    {
+        document.getElementById("just").innerHTML = "Hello JavaScript!";
+    }
+
+    function calculation()
+ {
+        document.getElementById("demo").innerHTML = 5 + 6;
+    }
+</script>
+   <section class="flex flex-col justify-center items-center gap-4 bg-white/80 p-4 rounded-lg shadow-lg">
+    <h1 class="text-4xl">JavaScript Practice</h1>
+
+    <button type="button" onclick="myFunction()" class="underline">
+        Click Me!
+    </button>
+
+    <p id="just"></p>
+</section>
+
+<section class="flex flex-col justify-center items-center gap-4 mt-10 bg-white/80 p-6 rounded-lg ">
+    <p>Auto Calculate</p>
+
+    <button type="button" onclick="calculation()" class="underline">
+        Calculation
+    </button>
+
+    <p id="demo"></p>
+</section>
+</div>
+
+
+</body>
+</html>
