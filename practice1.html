@@ -16,8 +16,18 @@
     }
 
     function calculation()
- {
+    {
+ 
         document.getElementById("demo").innerHTML = z;
+    }
+    function oparation()
+    {
+        let a;
+        let b;
+        a=5;
+        b=6;
+        let c = (a+b)*5
+        document.getElementById("opa.").innerHTML = c;
     }
 </script>
    <section class="flex flex-col justify-center items-center gap-4 bg-white/80 p-4 rounded-lg shadow-lg">
@@ -29,6 +39,9 @@
      <p id="just"></p>
     <button type=""button" onclick="myFunction()" class="underline">found</button>
     <p id="fahim"></p>
+    <button type="button" onclick="oparation()" class="underline">Operation</button>
+    <p id="opa."></p>
+    
 </section>
 
 <section class="flex flex-col justify-center items-center gap-4 mt-10 bg-white/80 p-4 rounded-lg ">
@@ -52,9 +65,14 @@
 let x, y, z;  
 x = 25;        
 y = 45;        
-z = x + y;    
+z = x + y+ "fahim" + "Muntasir";    
 
 document.getElementById("demo").innerHTML = "The value of z is " + z;  
+</script>
+<script>
+let a = 3;
+let x = (100 + 50) * a;
+document.getElementById("demo").innerHTML = x;
 </script>
 
 </div>
