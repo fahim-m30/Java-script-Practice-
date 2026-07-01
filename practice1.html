@@ -11,12 +11,13 @@
     <script>
     function myFunction() 
     {
-        document.getElementById("just").innerHTML = "Hello JavaScript!";
+        document.getElementById("just").innerHTML ="Hello JavaScript!";
+        document.getElementById("fahim").innerHTML ="Practice more";
     }
 
     function calculation()
  {
-        document.getElementById("demo").innerHTML = 5 + 6;
+        document.getElementById("demo").innerHTML = z;
     }
 </script>
    <section class="flex flex-col justify-center items-center gap-4 bg-white/80 p-4 rounded-lg shadow-lg">
@@ -25,11 +26,12 @@
     <button type="button" onclick="myFunction()" class="underline">
         Click Me!
     </button>
-
-    <p id="just"></p>
+     <p id="just"></p>
+    <button type=""button" onclick="myFunction()" class="underline">found</button>
+    <p id="fahim"></p>
 </section>
 
-<section class="flex flex-col justify-center items-center gap-4 mt-10 bg-white/80 p-6 rounded-lg ">
+<section class="flex flex-col justify-center items-center gap-4 mt-10 bg-white/80 p-4 rounded-lg ">
     <p>Auto Calculate</p>
 
     <button type="button" onclick="calculation()" class="underline">
@@ -38,6 +40,23 @@
 
     <p id="demo"></p>
 </section>
+<section class="flex flex-col justify-center items-center gap-4 mt-10 bg-white/80 p-4 rounded-lg ">
+    <button onclick="window.print()" class="underline">print this base</button>
+</section>
+<section>
+    <script>
+        console.log("hello world");
+    </script>
+</section>
+<script>
+let x, y, z;  
+x = 25;        
+y = 45;        
+z = x + y;    
+
+document.getElementById("demo").innerHTML = "The value of z is " + z;  
+</script>
+
 </div>
 
 
